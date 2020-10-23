@@ -1,0 +1,54 @@
+
+.note {
+    width: 243px;
+    height: 150px;
+    font-size: 16px;
+    font-family: 'Lucida';
+    display: flex;
+    
+}
+
+.note-textarea {
+   background-color: white; 
+}
+
+.txt-area {
+    margin: 0px;
+    padding: 10px;
+    width: 243px;
+    height: 150px;
+    resize: vertical;
+}
+
+.txt-area:focus {
+    outline: none !important;
+    border: 2px solid black;
+}
+
+.note-toolbar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    grid-gap: 0.5rem;
+    justify-content: center;
+    width: 99%;
+    margin-top: -1px;
+    padding-left: 0px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    z-index: 1;
+}
+
+.note-toolbar i {
+    font-size: 12px; 
+    color: gray;
+    margin: 2px;
+    padding: 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.note-toolbar i:hover {
+    color: black;
+}

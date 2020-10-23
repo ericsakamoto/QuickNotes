@@ -1,0 +1,58 @@
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style2.css" />
+    <script src="https://kit.fontawesome.com/f73ca1b76b.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+        rel="stylesheet"
+    />
+    </head>
+    <body>
+        <div class="top-bar">
+            <span class="logo-text">
+                <i class="fas fa-bolt"></i>
+                QuickNotes
+            </span>
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="work-area" onclick="hideTextArea">
+            <div class="menu">
+                <div class="new-note" onclick="addNewNote()">
+                    <i id="newnote" draggable="true" class="far fa-sticky-note" ondragstart="drag(event)"></i>
+                    <span class="menu-text">Note</span>
+                </div>
+                <div class="new-folder">
+                    <i class="fas fa-folder-plus"></i>
+                    <span class="menu-text">Folder</span>
+                </div>
+                <div class="folders">
+                    <nav class="navbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <i class="far fa-folder"></i>
+                                <span class="menu-text">Folder 1</span>
+                            </li>
+                            <li class="nav-item">
+                                <i class="far fa-folder"></i>
+                                <span class="menu-text">Folder 2</span>
+                            </li>
+                            <li class="nav-item">
+                                <i class="far fa-folder"></i>
+                                <span class="menu-text">Folder 3</span>
+                            </li>
+                            <li class="nav-item">
+                                <i class="far fa-folder"></i>
+                                <span class="menu-text">Folder 4</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <main id="main">
+
+            </main>
+        </div>
+    </body>
+</html>

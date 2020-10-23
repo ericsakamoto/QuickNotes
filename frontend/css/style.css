@@ -1,0 +1,129 @@
+:root {
+  font-size: 16px;
+  font-family: 'Open Sans';
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #ababc2;
+  --transition-speed: 600ms;
+  --menu-width: 5rem;
+}
+
+body {
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline; 
+}
+
+main {
+  margin-left: 5rem;
+  padding: 1rem;
+  background-color: red;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline; 
+  background: var(--bg-primary);
+  width: 5rem;
+  height: 100%;
+  top: 0;
+}
+
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+  width: var(--menu-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.logo-text {
+  color: white;
+  font-size: x-small;
+}
+
+.new-note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  background-color: var(--bg-primary);
+  transition: width 600ms ease;
+  overflow: scroll;  
+  height: 100%;
+  top: 0;
+  width: 5rem;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-item:last-child {
+  margin-top: auto;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 5rem;
+  color: var(--text-primary);
+}
+
+
+.link-text {
+  font-size: x-small;
+  color: var(--text-primary);
+}
+
+.fa-sticky-note {
+  font-size: 20px; 
+  color: white 
+}
+
+#mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
+
